@@ -81,10 +81,9 @@ scram b -j 10
 
     python processNtuples_stage2.py
 
-(5a) The New Trigger scale factors (computed separately for true and fake taus) would be available inside the files named: "NewTriggerSFs_$ERA.root".
+(5a) The New Trigger scale factors (computed separately for true and fake taus) would be available inside the files named: "NewTriggerSFs_$ERA.root" (where, $ERA = 2016/2017/2018).
 
-(5b) The Old Trigger scale factors (computed in 2 different ways: adding all fake-taus to DY MC process, subtracting all fake-taus from data) would be available inside the files named: "turn_on_$ERA_add-to-dy-mc_fitted_LATEST.root"
-     and "turn_on_$ERA_subtract-from-data_fitted_LATEST.root".
+(5b) The Old Trigger scale factors (computed in 2 different ways: adding all fake-taus to DY MC process, subtracting all fake-taus from data) would be available inside the files named: "turn_on_$ERA_add-to-dy-mc_fitted_LATEST.root" and "turn_on_$ERA_subtract-from-data_fitted_LATEST.root" (where, $ERA = 2016/2017/2018).
 
 (6) The plots for both old and new Trigger scale factors will be located inside the directory "Tau_Trigger_sf_plots" in .pdf, .root and .png formats for all Tau ID WPs, channels and tau decay modes.
 
