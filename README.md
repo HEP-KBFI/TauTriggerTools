@@ -3,16 +3,27 @@
 (1) Setup the area following this recipe:
 
 cmsrel CMSSW_10_2_20
+
 cd CMSSW_10_2_20/src
+
 cmsenv
+
 git cms-init
+
 git cms-addpkg RecoMET/METFilters
+
 git cms-merge-topic cms-egamma:EgammaPostRecoTools
+
 git clone https://github.com/kandrosov/TauTriggerTools $CMSSW_BASE/src/TauTriggerTools
+
 cd $CMSSW_BASE/src/TauTriggerTools
+
 git branch -a
+
 git checkout remotes/origin/new-tuple
+
 cd $CMSSW_BASE/src
+
 scram b -j 10
 
 (2) Submit CRAB jobs (after setting up CRAB credentials) for all the samples and all the eras via. the commands (change --site option to the site where you have write access):
